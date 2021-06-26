@@ -17,7 +17,7 @@ FLAGS = [
     '-I', 'src',
     '-I', '.',
     # ROOT, TMVA
-    '-I', '/home/ahmat/dev/root_build/include'
+    '-I', '/Users/ahmat/github/rootbuild/include'
 ]
 
 def getFLAGS():

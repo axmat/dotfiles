@@ -15,7 +15,7 @@ syntax on
 " Background color
 set background=dark
 " Theme
-colorscheme dracula
+colorscheme minimal
 " Turn off modelines
 set modelines=0
 " For plug-ins to load correctly

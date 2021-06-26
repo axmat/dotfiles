@@ -14,6 +14,9 @@ Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'vim-surround/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'chrisbra/unicode.vim'
+" Plugin 'vimsence/vimsence'
+let g:airline_theme='minimalist'
+"let g:airline_solarized_bg='dark'
 
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0

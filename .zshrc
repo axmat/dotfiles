@@ -28,14 +28,16 @@ tvim(){
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig/
 
 # Python
-export PATH=$PATH:/usr/local/opt/python@3.8/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/opt/python@3.8/lib
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/opt/python@3.8/lib/pkgconfig
+alias python3=/usr/local/opt/python@3.8/bin/python3
 alias python=python3
+alias pip3=/usr/local/opt/python@3.8/bin/pip3
 alias pip=pip3
+alias python3-config=/usr/local/opt/python@3.8/bin/python3-config
 alias python-config=python3-config
 # julia
 alias julia=/Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia
+# haskell
+[ -f "/Users/ahmat/.ghcup/env" ] && source "/Users/ahmat/.ghcup/env"
 # Matlab
 #alias matlab='/Applications/Polyspace/Matlab_R2019b.app/bin/matlab -nodesktop -nosplash $*'
 # ROOT Dynamic Library Path
@@ -47,3 +49,4 @@ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ROOTSYS/lib
 export MANPATH=$MANPATH:$ROOTSYS/man
 # spicetify
 alias spicetify=/Users/ahmat/spicetify-cli/spicetify
+

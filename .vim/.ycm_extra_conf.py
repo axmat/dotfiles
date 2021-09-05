@@ -11,13 +11,17 @@ FLAGS = [
     '-isystem', '/usr/local/include',
     '-isystem', '/usr/include/c++/10',
     '-isystem', '/usr/include',
-    '-I', 'include',
-    '-I', 'inc',
-    '-I', 'source',
-    '-I', 'src',
+    #'-I', '../include',
+    #'-I', '../inc',
+    #'-I', '../source',
+    #'-I', '../src',
     '-I', '.',
-    # ROOT, TMVA
-    '-I', '/Users/ahmat/github/rootbuild/include'
+    # ROOT
+    '-I', '/Users/ahmat/github/rootbuild/include',
+    # LLVM
+    '-I', '/Users/ahmat/github/llvm_dev/llvm/include',
+    # MLIR
+    '-I', '/Users/ahmat/github/llvm_dev/mlir/include'
 ]
 
 def getFLAGS():

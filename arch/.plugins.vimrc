@@ -4,19 +4,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'lervag/vimtex'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-fugitive/vim-fugitive'
 Plugin 'chrisbra/csv.vim'
-Plugin 'JuliaEditorSupport/julia-vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'vim-surround/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'chrisbra/unicode.vim'
-" Plugin 'vimsence/vimsence'
-let g:airline_theme='minimalist'
-"let g:airline_solarized_bg='dark'
 
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0

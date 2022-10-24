@@ -6,22 +6,39 @@ FLAGS = [
     '-Wall',
     '-Wextra',
     '-Werror',
+    '-Wno-long-long',
     '-Wno-variadic-macros',
     '-fexceptions',
-    '-isystem', '/usr/local/include',
-    '-isystem', '/usr/include/c++/10',
-    '-isystem', '/usr/include',
-    #'-I', '../include',
-    #'-I', '../inc',
-    #'-I', '../source',
-    #'-I', '../src',
+    '-isystem', '/usr/local/include', 
+    '-isystem', '/usr/include/c++/9',
+    '-I', 'include',
+    '-I', 'src',
     '-I', '.',
+    # Eigen
+    #'-I','/usr/local/opt/eigen/include/eigen3',
+    # Boost
+    #'-I','/usr/local/include/boost',
+    # openBlas
+    #'-I','/usr/local/opt/openblas/include',
     # ROOT
-    '-I', '/Users/ahmat/github/rootbuild/include',
-    # LLVM
-    '-I', '/Users/ahmat/github/llvm_dev/llvm/include',
-    # MLIR
-    '-I', '/Users/ahmat/github/llvm_dev/mlir/include'
+    '-I','/home/ahmat/root/core/base/inc/',
+    '-I','/home/ahmat/root/core/meta/inc/',
+    '-I','/home/ahmat/root/core/foundation/inc/',
+    '-I','/home/ahmat/root/core/clib/inc/',
+    '-I','/home/ahmat/root/core/cont/inc/',
+    # For the RConfigure.h file generated when building root
+    '-I','/home/ahmat/root-build/ginclude/',
+    # TMVA SOFIE
+    '-I', '/home/ahmat/root/tmva/sofie/inc',
+    # openMP
+    #'-I','/usr/local/opt/libomp/include',
+    # Protobuf
+    #'-I','/usr/local/Cellar/protobuf/3.11.4/include/google/protobuf/'
+    '-I', '/usr/include/google/',
+    # OPenCV 
+    #'-I', '/usr/local/include/opencv4/'
+    # CUDA
+    '-I', '/usr/local/cuda/include/'
 ]
 
 def getFLAGS():
@@ -86,8 +103,11 @@ def Settings( filename, **kwargs):
         if (ext in ['.cpp', '.cxx', '.cc', '.C', '.hxx', '.hpp', '.h']) :
             flags += ['-std=c++17', '-x', 'c++']
         # C
-        elif (ext == '.c') :
+        elif (ext in ['.c', '.h']) :
             flags += ['-c99', '-x', 'c']
+        elif (ext in ['.cu', '.cuh']) :
+            flags += ['-x', 'cuda', '-std=c++17']
+        # relative_to = DirectoryOfThisScript()
         relative_to = os.path.dirname(os.path.abspath(filename))
         final_flags = MakeRelativePathsInFlagsAbsolute( FLAGS, relative_to )
     return {

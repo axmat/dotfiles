@@ -7,7 +7,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+# plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -18,8 +18,7 @@ eval "$(pyenv init -)"
 
 alias open='xdg-open'
 
-export EDITOR='nvim'
-alias vim='nvim'
+export EDITOR='vim'
 
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/home/ahmat/.local/bin

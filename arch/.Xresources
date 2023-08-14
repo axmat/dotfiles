@@ -1,1 +1,36 @@
-Xft.dpi: 120
+Xft.dpi: 123
+# 123 129.75
+#define red #FF0000
+#define darkred #8B0000
+#define mader #A50021
+#define cardinal #C51E3A
+#define carmine #960018
+#define redcosmos #58111A
+#define burgundy #800020
+#define silver #C0C0C0
+#define black #000000
+#define gray #808080
+#define dimgray #696969
+#define slategray #708090
+#define darkslategray #2F4F4F
+#define gainsboro #DCDCDC
+#define lightgray #D3D3D3
+#define darkgray #A9A9A9
+#define green #008000
+#define darkgreen #006400
+
+*.foreground: silver
+*.background: #474747
+
+*.color1: silver
+*.color2: black
+*.color3: gray
+*.color4: dimgray
+*.color5: #232323
+*.color6: slategray
+*.color7: darkslategray
+*.color8: gainsboro
+*.color9: lightgray
+*.color10: darkgray
+*.color11: red
+*.color12: darkgreen

@@ -1,12 +1,11 @@
 Xft.dpi: 140
-# 123 129.75
 #define red #FF0000
 #define darkred #8B0000
 #define mader #A50021
 #define cardinal #C51E3A
 #define carmine #960018
 #define redcosmos #58111A
-#define burgundy #800020
+#define burgundy #a64c62
 #define silver #C0C0C0
 #define black #000000
 #define gray #808080
@@ -36,4 +35,5 @@ Xft.dpi: 140
 *.color11: red
 *.color12: darkgreen
 *.color13: white
+*.color14: burgundy
 

@@ -25,7 +25,7 @@ export EDITOR='vim'
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:/home/ahmat/.local/bin
 # Turn off color with ls
-alias ls='ls --color=never'
+# alias ls='ls --color=never'
 
 # opt for Julia
 export PATH=$PATH:/home/ahmat/.local/opt/julia/bin
@@ -34,13 +34,17 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib
 
 # ROOT Dynamic Library Path
 # source $HOME/cern/root-build/bin/thisroot.sh
-export ROOTSYS=/home/ahmat/cern/root-build
-export ROOTLIBS=$ROOTSYS/lib
-export PATH=$PATH:$ROOTSYS/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ROOTSYS/lib
-export MANPATH=$MANPATH:$ROOTSYS/man
+#export ROOTSYS=/home/ahmat/cern/root-build
+#export ROOTLIBS=$ROOTSYS/lib
+#export PATH=$PATH:$ROOTSYS/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROOTSYS/lib
+#export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ROOTSYS/lib
+#export MANPATH=$MANPATH:$ROOTSYS/man
 
 # Black and white cat
 alias ccat='pygmentize -O style=bw'
+
+# Make clang default in CMake
+export CC=clang
+export CXX=clang++
 

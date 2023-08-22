@@ -261,6 +261,7 @@ client.background       $bg
 
 # exec set
 # bindsym $mod+z exec $HOME/.config/i3/i3-keyboard-layout cycle us de fr
+
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
